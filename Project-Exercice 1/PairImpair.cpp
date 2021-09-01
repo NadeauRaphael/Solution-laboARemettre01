@@ -30,3 +30,7 @@ void main()
 	}
 
 }
+// test 1- 4 le programme repound 4 est un nombre pair
+// test 2- 5 le programme repond  5 est un nombre impair
+// test 3- -4 le programme repond -4 est un nombre pair
+// test 4- -5 le programme repond -5 est un nombre impair
