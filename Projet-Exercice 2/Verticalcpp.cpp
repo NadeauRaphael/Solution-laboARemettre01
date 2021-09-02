@@ -41,3 +41,13 @@ void main()
 	//test 3: 12345 le programme repond en mettant les nombres en odres et dans un liste.
 	//Test 4: -12345 le programme repond ce nombre ne contient pas 5 chiffres. donc erreur
 }
+
+
+// Plan de test
+// nb				Écran
+// 1				1 est impair
+// 2				2 est pair
+//-1				-1 est impair
+//-2				-2 est pair
+// 0				0 est pair
+// a				a 0 est pair/ devrait afficher erreur
