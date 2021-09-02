@@ -44,7 +44,8 @@ void main()
 
 // Plan de test
 // nombre					ecran
-// 5							ce nombre ne contient pas 5 chiffres
+// 5						ce nombre ne contient pas 5 chiffres
 //-5						ce nombre ne contient pas 5 chiffres
 // 12345                    1 2 3 4 5 en liste horizontal
 //-12345					resultat: ce nombre ne contient pas 5 chiffres devrait afficher:-1-2-3-4-5 en liste horizontal
+// 0						ce nombre ne contient pas 5 chiffres
