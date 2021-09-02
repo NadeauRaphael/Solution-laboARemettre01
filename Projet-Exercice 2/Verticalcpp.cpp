@@ -1,7 +1,7 @@
-// But: Écrivez un programme qui prend comme entrée un nombre de cinq chiffres. 
-// Le programme vérifie qu'il y a bien 5 chiffres dans le nombre.
-// Puis il affiche le nombre verticalement, le premier chiffre sur la première ligne,
-// le deuxième chiffre sur la deuxième ligne, ainsi de suite
+/* But: Écrivez un programme qui prend comme entrée un nombre de cinq chiffres.
+ Le programme vérifie qu'il y a bien 5 chiffres dans le nombre.
+ Puis il affiche le nombre verticalement, le premier chiffre sur la première ligne,
+ le deuxième chiffre sur la deuxième ligne, ainsi de suite*/
 // Auteur : Raphael Nadeau
 // Date : 01-09-2021
 
@@ -10,6 +10,7 @@
 
 void main()
 {
+	//déclaration des variables
 	int nombre;
 	int chiffre1;
 	int chiffre2;
@@ -17,7 +18,7 @@ void main()
 	int chiffre4;
 	int chiffre5;
 
-	// demander un mobre a l'utilisateur
+	// Demander un nombre entier a 5 chiffre a l'utilisateur
 	std::cout << "entrer un nombre a 5 chiffres:";
 	// l'utilisateur entre son nombre
 	std::cin >> nombre;
@@ -31,6 +32,7 @@ void main()
 		chiffre4 = nombre / 1000 % 10;
 		chiffre5 = nombre / 10000 % 10;
 		std::cout << chiffre5 << std::endl << chiffre4 << std::endl << chiffre3 << std::endl << chiffre2 << std::endl << chiffre1 << std::endl;
+	
 	}
 	else
 	{
