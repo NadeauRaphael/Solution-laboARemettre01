@@ -43,11 +43,3 @@ void main()
 }
 
 
-// Plan de test
-// nb				Écran
-// 1				1 est impair
-// 2				2 est pair
-//-1				-1 est impair
-//-2				-2 est pair
-// 0				0 est pair
-// a				a 0 est pair/ devrait afficher erreur
