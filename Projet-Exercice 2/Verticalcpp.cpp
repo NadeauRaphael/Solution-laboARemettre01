@@ -21,8 +21,8 @@ void main()
 	std::cout << "entrer un nombre a 5 chiffres:";
 	// l'utilisateur entre son nombre
 	std::cin >> nombre;
-	//le programme fait l'analyse du nombre avec le calcul ci-dessus pour identifier si le nombre a 5 chiffres ou 
-	//non selon la reponse du calcul. De plus, il affiche selon le resultat une reponse designer ci-dessous.
+	//le programme fait l'analyse du nombre pour identifier si le nombre a 5 chiffres ou 
+	//non. De plus, il affiche si le nombre a 5 chiffre en effectuant des division et des momento et affiche les nombres en ordres.
 	if  (nombre > 9999 && nombre < 100000 )
 	{
 		chiffre1 = nombre % 10;
