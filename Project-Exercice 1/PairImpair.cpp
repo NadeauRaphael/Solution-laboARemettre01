@@ -12,14 +12,14 @@ void main()
 {
 	int nb;
 	int reste;
-
+	// demander a l'utilisateur d'ecrire un nombre a analyser
 	std::cout << "ecrire un nombre entier : ";
 
-
+	// l'utilisateur tape le nombre voulu
 	std::cin >> nb;
 
 	reste = nb % 2;
-
+	// le programme fait l'analyse du nombre avec le calcul ci-dessus pour identifier si le nombre est impair ou pair selon la reponse du calcul.
 	if (reste == 0)
 	{
 		std::cout << nb << " est un nombre pair" << std::endl;
