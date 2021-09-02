@@ -17,9 +17,12 @@ void main()
 	int chiffre4;
 	int chiffre5;
 
-
+	// demander un mobre a l'utilisateur
 	std::cout << "entrer un nombre a 5 chiffres:";
+	// l'utilisateur entre son nombre
 	std::cin >> nombre;
+	//le programme fait l'analyse du nombre avec le calcul ci-dessus pour identifier si le nombre a 5 chiffres ou 
+	//non selon la reponse du calcul. De plus, il affiche selon le resultat une reponse designer ci-dessous.
 	if  (nombre > 9999 && nombre < 100000 )
 	{
 		chiffre1 = nombre % 10;
