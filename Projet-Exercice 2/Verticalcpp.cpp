@@ -36,5 +36,8 @@ void main()
 	{
 		std::cout << "Ce nombre ne contient pas 5 chiffres";
 	}
-
+    //test 1: 5 le programme repond ce nombre ne contient pas 5 chiffres
+	//test 2: -5 le programme repond ce nombre ne contient pas 5 chiffres
+	//test 3: 12345 le programme repond en mettant les nombres en odres et dans un liste.
+	//Test 4: -12345 le programme repond ce nombre ne contient pas 5 chiffres. donc erreur
 }
