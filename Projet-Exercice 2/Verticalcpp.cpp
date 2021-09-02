@@ -22,7 +22,7 @@ void main()
 	// l'utilisateur entre son nombre
 	std::cin >> nombre;
 	//le programme fait l'analyse du nombre pour identifier si le nombre a 5 chiffres ou 
-	//non. De plus, il affiche si le nombre a 5 chiffre en effectuant des division et des momento et affiche les nombres en ordres.
+	//non. De plus, il affiche si le nombre a 5 chiffre en effectuant des division et des modulo et affiche les nombres en ordres.
 	if  (nombre > 9999 && nombre < 100000 )
 	{
 		chiffre1 = nombre % 10;

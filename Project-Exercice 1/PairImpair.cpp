@@ -19,7 +19,7 @@ void main()
 	std::cin >> nb;
 
 	reste = nb % 2;
-	// le programme fait l'analyse du nombre avec le calcul ci-dessus pour identifier si le nombre est impair ou pair selon la reponse du calcul.
+	// le programme fait l'analyse du nombre avec le calcul ci-dessus pour identifier si le nombre est impair ou pair selon si le modulo.
 	if (reste == 0)
 	{
 		std::cout << nb << " est un nombre pair" << std::endl;
