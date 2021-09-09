@@ -31,12 +31,19 @@ void main()
    std::cout << "Entrer la durée de la location ( en jours ): ";
    std::cin >> jour;
 
+   // Déclaration des constantes pour numériser des valeurs numérique.
+   const double LOCATIONPARJOUR = 45;
+   const double COUTESSENCE_L = 1.35;
+   const int NB_KILOMETRE_GRATUIT = 250;
+   const double COSSO_ESSENCE = 7.6;
+   const double COUT_KILO_SUP = 0.05;
+
    // calcul
-   location = jour * 45;
-   essence = km / 100.0 *7.6;
-   kmgratuit = jour * 250;
-   coutkmplus= (km-kmgratuit)*0.05;
-   coutessence = essence * 1.35;
+   location = jour * LOCATIONPARJOUR;
+   essence = km / 100.0 *COSSO_ESSENCE;
+   kmgratuit = jour * NB_KILOMETRE_GRATUIT;
+   coutkmplus= (km-kmgratuit)*COUT_KILO_SUP;
+   coutessence = essence * COUTESSENCE_L;
 
    if (km<0 || jour<0)
    {
