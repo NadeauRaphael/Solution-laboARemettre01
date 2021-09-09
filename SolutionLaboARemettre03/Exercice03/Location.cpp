@@ -8,14 +8,18 @@
 
 void main()
 {
-   // pour afficher correctement les accent
+   // pour afficher correctement les accents
    setlocale(LC_ALL, "");
 
    // Déclaration des variables
    double Cout;
    double essence;
-   double jour;
-   double km;
+   double coutessence;
+   int jour;
+   int km;
+   int kmgratuit;
+   double location;
+   double coutkmplus;
 
 
 
@@ -27,19 +31,32 @@ void main()
    std::cout << "Entrer la durée de la location ( en jours ): ";
    std::cin >> jour;
 
-   essence = km / 7.6;
+   // calcul
+   location = jour * 45;
+   essence = km / 100 *7.6;
+   kmgratuit = jour * 250;
+   coutkmplus= (km-kmgratuit)*0.05;
+   coutessence = essence * 1.35;
 
-
-   if (km > 250*jour)
+   if (km<0 || jour<0)
    {
-      Cout = 45 * jour + (essence * 1.35) + (km-250) * jour * 0.05;
+      std::cout << "Erreur un ou plusieurs chiffres entrés sont négatif" << std::endl;
+   }
+
+   //si le nombre de kilometre est en dessous de 250km
+  else if (km > kmgratuit)
+   {
+      Cout = location + coutessence + coutkmplus;
+    
+      std::cout << "le montant a payer est de : " << Cout << "$" << std::endl;
    }
    else
    {
-      Cout = 45 * jour + (essence * 1.35);
+      Cout = location + coutessence;
+      std::cout << "le montant a payer est de : " << Cout << "$" << std::endl;
    }
 
-   std::cout << "le montant a payer est de : " << Cout << "$" << std::endl;
+   
 
 
    system("pause");
@@ -49,9 +66,10 @@ void main()
 
 // Plan de test
 // km  | jour  |   écran         
-//50   |   1   |   53.8816$        
-//250  |   1   |   89.4079$
-//300  |   1   |   100.789$
-//500  |   2   |   178.816$
-//1250 |   4   |   602.039$
+//50   |   1   |   45$        
+//250  |   1   |   65.52$
+//300  |   1   |   78.28$
+//500  |   2   |   141.3$
+//1250 |   4   |   315,52$
+//-500 |  -1   |   Erreur un ou plusieurs chiffres entrés sont négatif
   
