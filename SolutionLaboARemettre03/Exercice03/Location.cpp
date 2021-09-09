@@ -33,7 +33,7 @@ void main()
 
    // calcul
    location = jour * 45;
-   essence = km / 100 *7.6;
+   essence = km / 100.0 *7.6;
    kmgratuit = jour * 250;
    coutkmplus= (km-kmgratuit)*0.05;
    coutessence = essence * 1.35;
@@ -66,7 +66,7 @@ void main()
 
 // Plan de test
 // km  | jour  |   écran         
-//50   |   1   |   45$        
+//50   |   1   |   50.13$        
 //250  |   1   |   65.52$
 //300  |   1   |   78.28$
 //500  |   2   |   141.3$
